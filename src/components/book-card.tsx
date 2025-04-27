@@ -17,7 +17,7 @@ interface BookCardProps {
 }
 
 export function BookCard({ book }: BookCardProps) {
-  const pdfPath = `/books/${book.id}`; // Construct path to the PDF
+  const pdfPath = `/books/${encodeURIComponent(book.id)}`; // Construct path to the PDF
 
   return (
     <Link href={pdfPath} target="_blank" rel="noopener noreferrer" className="group block">
