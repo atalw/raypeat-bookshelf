@@ -1,10 +1,10 @@
-{
+t {
   "name": "raypeat-bookshelf",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-book-list.mjs && next build",
+    "build": "git lfs pull && node scripts/generate-book-list.mjs && next build",
     "start": "next start",
     "lint": "next lint"
   },
