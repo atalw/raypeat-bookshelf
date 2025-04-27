@@ -1,103 +1,142 @@
-import Image from "next/image";
+// src/app/page.tsx
+import { BookGridClient } from '@/components/book-grid-client';
+import { Book } from '@/components/book-card';
+import fs from 'fs/promises'; // Make sure fs.promises is imported
+import path from 'path';
 
-export default function Home() {
+const BOOKS_DIRECTORY = path.join(process.cwd(), 'public/books');
+const COVERS_DIRECTORY = path.join(process.cwd(), 'public/covers'); // Define covers directory path
+const PUBLIC_COVERS_URL_PATH = '/covers'; // Public URL path
+
+// --- Parsing Function (keep as is) ---
+interface ParsedFilename {
+  title: string;
+  author: string;
+  year?: number;
+}
+function parseFilename(filename: string): ParsedFilename {
+  const nameWithoutExt = filename.replace(/\.pdf$/i, '');
+  const parts = nameWithoutExt.split(' - ');
+
+  if (parts.length >= 3) {
+    const yearStr = parts[0].trim();
+    const authorStr = parts[1].trim();
+    const titleStr = parts.slice(2).join(' - ').trim();
+    const year = parseInt(yearStr, 10);
+
+    if (!isNaN(year) && yearStr.length === 4) {
+      return {
+        year: year,
+        author: authorStr || 'Unknown Author',
+        title: titleStr || 'Untitled',
+      };
+    }
+  }
+
+  console.warn(`Could not parse filename format: "${filename}". Using fallback.`);
+  const fallbackTitle = nameWithoutExt.replace(/[_-]/g, ' ');
+  return {
+    title: fallbackTitle || 'Untitled',
+    author: 'Unknown Author',
+    year: undefined,
+  };
+}
+// --- End Parsing Function ---
+
+// --- Helper to check file existence ---
+async function checkFileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// --- getBooksFromDirectory Function (UPDATED) ---
+async function getBooksFromDirectory(): Promise<Book[]> {
+  try {
+    const filenames = await fs.readdir(BOOKS_DIRECTORY);
+    const possibleExtensions = ['.jpg', '.jpeg', '.png', '.webp']; // Common image extensions
+
+    const bookPromises = filenames
+      .filter(filename => filename.toLowerCase().endsWith('.pdf'))
+      .map(async (filename): Promise<Book | null> => { // Return Promise<Book | null>
+        const parsed = parseFilename(filename);
+        const baseName = filename.replace(/\.pdf$/i, '');
+        let coverImageUrl: string | undefined = undefined;
+
+        // Check for corresponding cover image
+        for (const ext of possibleExtensions) {
+          const coverFilename = `${baseName}${ext}`;
+          const coverFilePath = path.join(COVERS_DIRECTORY, coverFilename);
+          if (await checkFileExists(coverFilePath)) {
+            coverImageUrl = `${PUBLIC_COVERS_URL_PATH}/${coverFilename}`; // Construct public URL
+            break; // Found one, stop checking
+          }
+        }
+
+        // Basic validation - ensure title and author were parsed reasonably
+        if (!parsed.title || parsed.title === 'Untitled' || !parsed.author || parsed.author === 'Unknown Author') {
+            // Optionally log a more specific warning if parsing failed badly
+            // console.warn(`Skipping book due to parsing issues: ${filename}`);
+            // return null; // Or decide how to handle poorly parsed files
+        }
+
+
+        return {
+          id: filename,
+          title: parsed.title,
+          author: parsed.author,
+          year: parsed.year,
+          coverImageUrl: coverImageUrl, // Add the found URL
+        };
+      });
+
+    // Wait for all checks and mappings to complete
+    const booksWithNulls = await Promise.all(bookPromises);
+    const books = booksWithNulls.filter((book): book is Book => book !== null); // Filter out any nulls if added validation
+
+    // No sorting here - handled by client component
+    return books;
+  } catch (error) {
+    console.error(`Error reading books directory (${BOOKS_DIRECTORY}):`, error);
+    if (error instanceof Error && 'code' in error && error.code === 'ENOENT') {
+       console.warn(`Books directory not found at: ${BOOKS_DIRECTORY}. Please create it and add PDF files.`);
+       // Also check/warn for covers directory
+       try {
+           await fs.access(COVERS_DIRECTORY);
+       } catch (coverError) {
+           if (coverError instanceof Error && 'code' in coverError && coverError.code === 'ENOENT') {
+               console.warn(`Covers directory not found at: ${COVERS_DIRECTORY}. Please create it to add cover images.`);
+           }
+       }
+    }
+    return [];
+  }
+}
+// --- End getBooksFromDirectory Function ---
+
+
+// This remains an async Server Component
+export default async function HomePage() {
+  // Fetch the raw, unsorted book data (now includes coverImageUrl)
+  const allBooks = await getBooksFromDirectory();
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-6 text-center sm:text-left">Ray Peat's Bookshelf</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      {allBooks.length > 0 ? (
+        // Render the Client Component and pass the unsorted books to it
+        <BookGridClient initialBooks={allBooks} />
+      ) : (
+        // Display message if no books were found initially
+        <p className="text-center text-muted-foreground">
+          Your bookshelf is empty. Add PDF files (e.g., "YYYY - Author Name - Book Title.pdf") to the '{path.relative(process.cwd(), BOOKS_DIRECTORY)}' directory. You can also add corresponding cover images (e.g., "YYYY - Author Name - Book Title.jpg") to the '{path.relative(process.cwd(), COVERS_DIRECTORY)}' directory.
+        </p>
+      )}
+    </main>
   );
 }
+
