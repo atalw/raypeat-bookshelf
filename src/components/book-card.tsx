@@ -3,13 +3,15 @@ import Link from 'next/link';
 import Image from 'next/image'; // Import next/image
 import { BookText } from 'lucide-react'; // Import an icon for fallback
 
-// Define the Book interface (if not already defined elsewhere and imported)
+// Define the Book interface (or import it if defined centrally)
+// Make sure this interface matches the structure in src/data/books.json
 export interface Book {
-  id: string; // filename used as id
+  id: string; // filename used as id (e.g., "YYYY - Author - Title.pdf")
   title: string;
   author: string;
   year?: number;
-  coverImageUrl?: string; // Optional cover image URL
+  coverImageUrl?: string; // Optional local cover image URL (e.g., /covers/...)
+  pdfUrl: string;         // The full URL to the PDF on Vercel Blob
 }
 
 interface BookCardProps {
@@ -17,10 +19,15 @@ interface BookCardProps {
 }
 
 export function BookCard({ book }: BookCardProps) {
-  const pdfPath = `/books/${book.id}`; // Construct path to the PDF
+  // No longer need to construct pdfPath locally
+  // const pdfPath = `/books/${book.id}`;
+
+  // Use the pdfUrl directly from the book data
+  const pdfLinkHref = book.pdfUrl;
 
   return (
-    <Link href={pdfPath} target="_blank" rel="noopener noreferrer" className="group block">
+    // Use the pdfLinkHref for the Link component
+    <Link href={pdfLinkHref} target="_blank" rel="noopener noreferrer" className="group block">
       {/* Removed aspect-square from here, apply to image container if needed */}
       <div className="border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 bg-card text-card-foreground overflow-hidden flex flex-col h-full">
 
@@ -28,7 +35,7 @@ export function BookCard({ book }: BookCardProps) {
         <div className="relative w-full aspect-square bg-muted overflow-hidden"> {/* aspect-square here makes the image area square */}
           {book.coverImageUrl ? (
             <Image
-              src={book.coverImageUrl}
+              src={book.coverImageUrl} // This remains the local path to the cover
               alt={`Cover for ${book.title}`}
               fill // Use fill to cover the container
               sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw" // Help browser optimize image loading
