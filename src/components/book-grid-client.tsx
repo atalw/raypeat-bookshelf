@@ -177,7 +177,7 @@ export function BookGridClient({ initialBooks }: BookGridClientProps) {
                 <ArrowUpDown className="ml-2 h-4 w-4 opacity-50" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent align="end" className="bg-popover text-popover-foreground"> 
               <DropdownMenuLabel>Sort Books By</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuRadioGroup value={sortState} onValueChange={(value) => setSortState(value as SortState)}>
