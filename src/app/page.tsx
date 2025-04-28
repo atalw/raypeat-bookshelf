@@ -1,6 +1,5 @@
 // src/app/page.tsx
 import { BookGridClient } from '@/components/book-grid-client';
-import { Analytics } from "@vercel/analytics/react"
 // The Book type might now be better defined centrally or imported from the client component if not used elsewhere server-side
 // import { Book } from '@/components/book-card';
 import path from 'path'; // Keep path only for the "empty" message if needed
@@ -33,7 +32,6 @@ export default function HomePage() {
           <br /> (Run the build again after adding files).
         </p>
       )}
-      <Analytics />
     </main>
   );
 }
