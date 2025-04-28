@@ -1,29 +1,69 @@
 // src/components/book-grid-client.tsx
 "use client";
 
-import { useState, useMemo, ChangeEvent, useRef, useEffect } from 'react'; // Added useRef, useEffect
+import { useState, useMemo, ChangeEvent, useRef, useEffect } from 'react';
 import { BookCard, Book } from '@/components/book-card';
-import { Search, X } from 'lucide-react'; // Import an icon for the button
+// Import icons and Shadcn components
+import { Search, X, ArrowUpDown } from 'lucide-react';
+import { Button } from "@/components/ui/button"; // Shadcn Button
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"; // Shadcn Dropdown
 
-// --- Sort State Definitions (keep as is) ---
-type SortState = 'year_desc' | 'year_asc' | 'title_asc' | 'title_desc';
+// --- Sort State Definitions (remain the same) ---
+type SortState =
+  | 'title_asc'
+  | 'title_desc'
+  | 'author_asc'
+  | 'author_desc'
+  | 'year_desc'
+  | 'year_asc';
+
 const sortLabels: Record<SortState, string> = {
-  year_desc: 'Year (Newest)',
-  year_asc: 'Year (Oldest)',
   title_asc: 'Title (A-Z)',
   title_desc: 'Title (Z-A)',
+  author_asc: 'Author (A-Z)',
+  author_desc: 'Author (Z-A)',
+  year_desc: 'Year (Newest)',
+  year_asc: 'Year (Oldest)',
 };
-const sortCycle: SortState[] = ['year_desc', 'year_asc', 'title_asc', 'title_desc'];
+
+const sortOptions: SortState[] = [
+    'title_asc',
+    'title_desc',
+    'author_asc',
+    'author_desc',
+    'year_desc',
+    'year_asc',
+];
 // --- End Sort State Definitions ---
 
 interface BookGridClientProps {
   initialBooks: Book[];
 }
 
-// --- sortBooks Helper Function (keep as is) ---
+// --- sortBooks Helper Function (remains the same) ---
 const sortBooks = (booksToSort: Book[], criteria: SortState): Book[] => {
   const sorted = [...booksToSort]; // Shallow copy
   switch (criteria) {
+    case 'title_asc':
+      sorted.sort((a, b) => a.title.localeCompare(b.title));
+      break;
+    case 'title_desc':
+      sorted.sort((a, b) => b.title.localeCompare(a.title));
+      break;
+    case 'author_asc':
+      sorted.sort((a, b) => a.author.localeCompare(b.author));
+      break;
+    case 'author_desc':
+      sorted.sort((a, b) => b.author.localeCompare(a.author));
+      break;
     case 'year_desc':
       sorted.sort((a, b) => {
         if (a.year && b.year) {
@@ -42,28 +82,19 @@ const sortBooks = (booksToSort: Book[], criteria: SortState): Book[] => {
         return a.title.localeCompare(b.title);
       });
       break;
-    case 'title_asc':
-      sorted.sort((a, b) => a.title.localeCompare(b.title));
-      break;
-    case 'title_desc':
-      sorted.sort((a, b) => b.title.localeCompare(a.title));
-      break;
   }
   return sorted;
 };
 // --- End sortBooks Helper Function ---
 
 export function BookGridClient({ initialBooks }: BookGridClientProps) {
-  // State for sorting
+  // State (remains the same)
   const [sortState, setSortState] = useState<SortState>('year_desc');
-  // State for the search query
   const [searchQuery, setSearchQuery] = useState<string>('');
-  // State to control search input visibility
   const [isSearchVisible, setIsSearchVisible] = useState<boolean>(false);
-  // Ref for the search input element
   const searchInputRef = useRef<HTMLInputElement>(null);
 
-  // Memoize the filtered and sorted books
+  // Memoization (remains the same)
   const displayedBooks = useMemo(() => {
     const lowerCaseQuery = searchQuery.toLowerCase().trim();
     const filteredBooks = lowerCaseQuery
@@ -76,44 +107,18 @@ export function BookGridClient({ initialBooks }: BookGridClientProps) {
     return sortBooks(filteredBooks, sortState);
   }, [initialBooks, sortState, searchQuery]);
 
-  // Handler to cycle sort state
-  const handleSortCycle = () => {
-    const currentIndex = sortCycle.indexOf(sortState);
-    const nextIndex = (currentIndex + 1) % sortCycle.length;
-    setSortState(sortCycle[nextIndex]);
-  };
-
-  // Handler for search input changes
+  // Handlers and Effects (remain the same)
   const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
   };
-
-  // Handler to show the search input
   const showSearchInput = () => {
     setIsSearchVisible(true);
   };
-
-  // Handler to hide the search input and optionally clear it
-  const hideSearchInput = (clearQuery = false) => {
-    setIsSearchVisible(false);
-    if (clearQuery) {
-        setSearchQuery('');
-    }
-  };
-
-  // Handler for input blur - hide the input
   const handleSearchBlur = () => {
-      // Use a small timeout to allow other click events (like clear button) to register
       setTimeout(() => {
-          // Check if the focus is still within a related element if needed,
-          // but for simplicity, just hide it.
-          // We might not hide if the query has text, depending on desired UX.
-          // Let's hide it regardless for now.
           setIsSearchVisible(false);
       }, 150);
   };
-
-  // Effect to focus the input when it becomes visible
   useEffect(() => {
     if (isSearchVisible && searchInputRef.current) {
       searchInputRef.current.focus();
@@ -125,8 +130,8 @@ export function BookGridClient({ initialBooks }: BookGridClientProps) {
       {/* Controls Row */}
       <div className="mb-4 flex flex-col sm:flex-row gap-2 justify-center sm:justify-end items-center">
 
-         {/* Search Area: Conditionally renders button or input */}
-         <div className="relative w-full sm:w-auto"> {/* Container for positioning */}
+         {/* Search Area (remains the same) */}
+         <div className="relative w-full sm:w-auto">
             {isSearchVisible ? (
                <div className="relative flex items-center w-full">
                   <Search className="absolute left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -136,11 +141,10 @@ export function BookGridClient({ initialBooks }: BookGridClientProps) {
                      placeholder="Search..."
                      value={searchQuery}
                      onChange={handleSearchChange}
-                     onBlur={handleSearchBlur} // Hide when focus is lost
+                     onBlur={handleSearchBlur}
                      className="pl-8 pr-8 py-1 text-sm rounded border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring w-full"
                      aria-label="Search books input"
                   />
-                  {/* Optional: Clear button inside input */}
                   {searchQuery && (
                      <button
                         onClick={() => setSearchQuery('')}
@@ -152,28 +156,55 @@ export function BookGridClient({ initialBooks }: BookGridClientProps) {
                   )}
                </div>
             ) : (
-               <button
+               <Button
+                  variant="outline"
+                  size="sm"
                   onClick={showSearchInput}
-                  className="px-3 py-1 text-sm rounded border bg-secondary text-secondary-foreground hover:bg-secondary/80 w-full sm:w-auto flex items-center justify-center sm:justify-start gap-1"
+                  className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-1"
                   aria-label="Open search input"
                >
                   <Search className="h-4 w-4" />
                   <span>Search</span>
-               </button>
+               </Button>
             )}
          </div>
 
-         {/* Sort Button */}
-         <button
-            onClick={handleSortCycle}
-            className="px-3 py-1 text-sm rounded border bg-secondary text-secondary-foreground hover:bg-secondary/80 whitespace-nowrap"
-            aria-live="polite"
-         >
-            Sort by: {sortLabels[sortState]}
-         </button>
+         {/* Sort Dropdown */}
+         <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="sm" className="w-full sm:w-auto justify-between">
+                Sort by: {sortLabels[sortState]}
+                <ArrowUpDown className="ml-2 h-4 w-4 opacity-50" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuLabel>Sort Books By</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioGroup value={sortState} onValueChange={(value) => setSortState(value as SortState)}>
+                {sortOptions.map((option) => (
+                  <DropdownMenuRadioItem
+                    key={option}
+                    value={option}
+                    // --- MODIFICATION HERE ---
+                    // Remove pl-8 (padding for indicator)
+                    // Add px-2 (general horizontal padding)
+                    // Add data-state=checked styles for background/text
+                    className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground"
+                    // --- END MODIFICATION ---
+                  >
+                    {/* The default bullet indicator is still rendered by Radix internally,
+                        but without the pl-8 padding, it should be effectively hidden or irrelevant */}
+                    {sortLabels[option]}
+                  </DropdownMenuRadioItem>
+                ))}
+              </DropdownMenuRadioGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
+         {/* End Sort Dropdown */}
+
       </div>
 
-      {/* Grid */}
+      {/* Grid (remains the same) */}
       {displayedBooks.length > 0 ? (
          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
            {displayedBooks.map((book) => (
