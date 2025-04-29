@@ -6,8 +6,8 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import quizDataJson from '@/data/quiz-questions.json';
 import React, { useState, useMemo, useEffect } from 'react';
-import { useRouter, useParams } from 'next/navigation'; // Import useParams
-import Link from 'next/link'; // Import Link for "Change Difficulty"
+import { useRouter, useParams } from 'next/navigation'; // useParams is actually not needed here when using page props
+import Link from 'next/link';
 
 // Define difficulty levels explicitly matching JSON keys
 type Difficulty = 'easy' | 'medium' | 'hard';
@@ -34,38 +34,37 @@ const quizData: QuizData = quizDataJson as QuizData;
 // Type for the answers state
 type AnswersState = { [questionId: string]: string | undefined; };
 
-// Props type for the page component including params
-interface QuizDifficultyPageProps {
-  params: {
-    difficulty: string; // Difficulty comes from the URL segment
-  };
-}
+// REMOVE the custom QuizDifficultyPageProps interface
+// interface QuizDifficultyPageProps {
+//   params: {
+//     difficulty: string; // Difficulty comes from the URL segment
+//   };
+// }
 
-export default function QuizDifficultyPage({ params }: QuizDifficultyPageProps) {
+// Correctly type the props according to Next.js PageProps structure for dynamic routes
+export default function QuizDifficultyPage({ params }: { params: { difficulty: string } }) {
   const [answers, setAnswers] = useState<AnswersState>({});
-  const [isValidDifficulty, setIsValidDifficulty] = useState(false); // State to track if difficulty is valid
+  const [isValidDifficulty, setIsValidDifficulty] = useState(false);
   const router = useRouter();
-  const pageDifficulty = params.difficulty as Difficulty; // Get difficulty from params
+  // Get difficulty directly from the destructured params prop
+  const pageDifficulty = params.difficulty as Difficulty;
 
-  // Validate the difficulty from the URL
+  // Validate the difficulty from the URL (useEffect remains the same)
   useEffect(() => {
     if (['easy', 'medium', 'hard'].includes(pageDifficulty)) {
       setIsValidDifficulty(true);
     } else {
-      // Optional: Redirect if difficulty is invalid
-      // router.replace('/quiz');
       setIsValidDifficulty(false);
     }
-  }, [pageDifficulty, router]);
+  }, [pageDifficulty]); // Removed router from dependency array as it's not used for validation logic itself
 
-  // Get the array of questions based on the difficulty from the URL params
+  // Get the array of questions based on the difficulty from the URL params (useMemo remains the same)
   const currentQuestions = useMemo(() => {
     if (!isValidDifficulty) return [];
-    // Directly access the array using the pageDifficulty as the key
     return quizData[pageDifficulty] || [];
   }, [pageDifficulty, isValidDifficulty]);
 
-  // --- Event Handlers (same as before) ---
+  // --- Event Handlers (remain the same) ---
   const handleAnswerChange = (questionId: string, value: string) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [questionId]: value }));
   };
@@ -90,10 +89,10 @@ export default function QuizDifficultyPage({ params }: QuizDifficultyPageProps) 
         score,
         totalQuestions,
         userAnswers: answers,
-        difficulty: pageDifficulty, // Use difficulty from params
+        difficulty: pageDifficulty,
         questionIds: currentQuestions.map(q => q.id)
       }));
-      router.push('/quiz/results'); // Navigate to results page
+      router.push('/quiz/results');
     } catch (error) {
       console.error("Failed to save results to sessionStorage:", error);
       alert("Could not save quiz results. Please try again.");
@@ -101,12 +100,11 @@ export default function QuizDifficultyPage({ params }: QuizDifficultyPageProps) 
   };
   // --- End Event Handlers ---
 
-  // Render loading or invalid state if needed
+  // Render invalid state if needed (remains the same)
    if (!isValidDifficulty) {
-     // You might want a better loading/error state here
      return (
         <main className="container mx-auto px-4 py-8 max-w-3xl text-center">
-            <p className="text-red-500 font-semibold">Invalid difficulty level selected.</p>
+            <p className="text-red-500 font-semibold">Invalid difficulty level: '{params.difficulty}'</p> {/* Show the invalid param */}
             <Link href="/quiz" className="text-blue-600 hover:underline mt-4 inline-block">
                 &larr; Choose Difficulty
             </Link>
@@ -114,16 +112,14 @@ export default function QuizDifficultyPage({ params }: QuizDifficultyPageProps) 
      );
    }
 
+  // Main component rendering (remains the same)
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
       <h1 className="text-3xl font-bold mb-6 text-center">Ray Peat Knowledge Quiz</h1>
-
-      {/* --- Quiz Form UI --- */}
       <>
         <p className="text-center text-muted-foreground mb-8">
           Difficulty: <span className="font-semibold capitalize">{pageDifficulty}</span>. Select one answer per question.
         </p>
-
         {currentQuestions.length > 0 ? (
           <form onSubmit={handleSubmit} className="space-y-8">
             {currentQuestions.map((q, index) => (
@@ -147,9 +143,7 @@ export default function QuizDifficultyPage({ params }: QuizDifficultyPageProps) 
                 </RadioGroup>
               </div>
             ))}
-
             <div className="text-center mt-10 space-x-4">
-               {/* Use Link for navigation back to difficulty selection */}
                <Link href="/quiz">
                  <Button type="button" variant="secondary">
                     Change Difficulty
