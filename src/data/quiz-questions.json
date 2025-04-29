@@ -1,0 +1,1508 @@
+{
+  "easy": [
+    {
+      "id": "q1",
+      "question": "Sample easy question 1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q2",
+      "question": "Sample easy question 2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q3",
+      "question": "Sample easy question 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q4",
+      "question": "Sample easy question 4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q5",
+      "question": "Sample easy question 5?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q6",
+      "question": "Sample easy question 6?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q7",
+      "question": "Sample easy question 7?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q8",
+      "question": "Sample easy question 8?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q9",
+      "question": "Sample easy question 9?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q10",
+      "question": "Sample easy question 10?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q11",
+      "question": "Sample easy question 11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q12",
+      "question": "Sample easy question 12?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q13",
+      "question": "Sample easy question 13?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q14",
+      "question": "Sample easy question 14?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q15",
+      "question": "Sample easy question 15?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q16",
+      "question": "Sample easy question 16?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q17",
+      "question": "Sample easy question 17?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q18",
+      "question": "Sample easy question 18?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q19",
+      "question": "Sample easy question 19?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    },
+    {
+      "id": "q20",
+      "question": "Sample easy question 20?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Easy Option A"
+        },
+        {
+          "id": "b",
+          "text": "Easy Option B"
+        },
+        {
+          "id": "c",
+          "text": "Easy Option C"
+        },
+        {
+          "id": "d",
+          "text": "Easy Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a easy level question.",
+      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+    }
+  ],
+  "medium": [
+    {
+      "id": "q21",
+      "question": "Sample medium question 1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q22",
+      "question": "Sample medium question 2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q23",
+      "question": "Sample medium question 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q24",
+      "question": "Sample medium question 4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q25",
+      "question": "Sample medium question 5?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q26",
+      "question": "Sample medium question 6?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q27",
+      "question": "Sample medium question 7?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q28",
+      "question": "Sample medium question 8?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q29",
+      "question": "Sample medium question 9?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q30",
+      "question": "Sample medium question 10?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q31",
+      "question": "Sample medium question 11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q32",
+      "question": "Sample medium question 12?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q33",
+      "question": "Sample medium question 13?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q34",
+      "question": "Sample medium question 14?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q35",
+      "question": "Sample medium question 15?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q36",
+      "question": "Sample medium question 16?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q37",
+      "question": "Sample medium question 17?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q38",
+      "question": "Sample medium question 18?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q39",
+      "question": "Sample medium question 19?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    },
+    {
+      "id": "q40",
+      "question": "Sample medium question 20?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medium Option A"
+        },
+        {
+          "id": "b",
+          "text": "Medium Option B"
+        },
+        {
+          "id": "c",
+          "text": "Medium Option C"
+        },
+        {
+          "id": "d",
+          "text": "Medium Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a medium level question.",
+      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+    }
+  ],
+  "hard": [
+    {
+      "id": "q41",
+      "question": "Sample hard question 1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q42",
+      "question": "Sample hard question 2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q43",
+      "question": "Sample hard question 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q44",
+      "question": "Sample hard question 4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q45",
+      "question": "Sample hard question 5?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q46",
+      "question": "Sample hard question 6?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q47",
+      "question": "Sample hard question 7?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q48",
+      "question": "Sample hard question 8?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q49",
+      "question": "Sample hard question 9?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q50",
+      "question": "Sample hard question 10?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q51",
+      "question": "Sample hard question 11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q52",
+      "question": "Sample hard question 12?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q53",
+      "question": "Sample hard question 13?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q54",
+      "question": "Sample hard question 14?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q55",
+      "question": "Sample hard question 15?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q56",
+      "question": "Sample hard question 16?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q57",
+      "question": "Sample hard question 17?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q58",
+      "question": "Sample hard question 18?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q59",
+      "question": "Sample hard question 19?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    },
+    {
+      "id": "q60",
+      "question": "Sample hard question 20?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hard Option A"
+        },
+        {
+          "id": "b",
+          "text": "Hard Option B"
+        },
+        {
+          "id": "c",
+          "text": "Hard Option C"
+        },
+        {
+          "id": "d",
+          "text": "Hard Option D"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "This is a placeholder explanation for a hard level question.",
+      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+    }
+  ]
+}
