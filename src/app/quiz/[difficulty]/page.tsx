@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import quizDataJson from '@/data/quiz-questions.json';
 import React, { useState, useMemo, useEffect } from 'react';
-import { useRouter, useParams } from 'next/navigation'; // useParams is actually not needed here when using page props
+import { useRouter } from 'next/navigation'; // Removed unused useParams
 import Link from 'next/link';
 
 // Define difficulty levels explicitly matching JSON keys
@@ -34,15 +34,15 @@ const quizData: QuizData = quizDataJson as QuizData;
 // Type for the answers state
 type AnswersState = { [questionId: string]: string | undefined; };
 
-// REMOVE the custom QuizDifficultyPageProps interface
-// interface QuizDifficultyPageProps {
-//   params: {
-//     difficulty: string; // Difficulty comes from the URL segment
-//   };
-// }
 
 // Correctly type the props according to Next.js PageProps structure for dynamic routes
-export default function QuizDifficultyPage({ params }: { params: { difficulty: string } }) {
+export default function QuizDifficultyPage({
+  params,
+  // searchParams, // You can destructure searchParams here if needed later
+}: {
+  params: { difficulty: string };
+  searchParams: { [key: string]: string | string[] | undefined }; // Add searchParams type
+}) {
   const [answers, setAnswers] = useState<AnswersState>({});
   const [isValidDifficulty, setIsValidDifficulty] = useState(false);
   const router = useRouter();
@@ -56,7 +56,7 @@ export default function QuizDifficultyPage({ params }: { params: { difficulty: s
     } else {
       setIsValidDifficulty(false);
     }
-  }, [pageDifficulty]); // Removed router from dependency array as it's not used for validation logic itself
+  }, [pageDifficulty]);
 
   // Get the array of questions based on the difficulty from the URL params (useMemo remains the same)
   const currentQuestions = useMemo(() => {
