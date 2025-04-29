@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import quizDataJson from '@/data/quiz-questions.json';
 import React, { useState, useMemo, useEffect } from 'react';
-import { useRouter } from 'next/navigation'; // Removed unused useParams
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 // Define difficulty levels explicitly matching JSON keys
@@ -34,15 +34,17 @@ const quizData: QuizData = quizDataJson as QuizData;
 // Type for the answers state
 type AnswersState = { [questionId: string]: string | undefined; };
 
-
-// Correctly type the props according to Next.js PageProps structure for dynamic routes
-export default function QuizDifficultyPage({
-  params,
-  // searchParams, // You can destructure searchParams here if needed later
-}: {
+// --- Define the Props type explicitly ---
+// This matches the standard structure expected for dynamic routes in App Router
+type Props = {
   params: { difficulty: string };
-  searchParams: { [key: string]: string | string[] | undefined }; // Add searchParams type
-}) {
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+// --- End Props type definition ---
+
+
+// Use the defined Props type for the component props
+export default function QuizDifficultyPage({ params }: Props) {
   const [answers, setAnswers] = useState<AnswersState>({});
   const [isValidDifficulty, setIsValidDifficulty] = useState(false);
   const router = useRouter();
