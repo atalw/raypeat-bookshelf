@@ -34,37 +34,38 @@ const quizData: QuizData = quizDataJson as QuizData;
 // Type for the answers state
 type AnswersState = { [questionId: string]: string | undefined; };
 
-// --- Define the Props type explicitly ---
-// This matches the standard structure expected for dynamic routes in App Router
-type Props = {
+// Remove the separate 'Props' type alias if you still have it
+
+// Use the standard inline type definition for page props in dynamic routes
+export default function QuizDifficultyPage({
+  params
+}: {
   params: { difficulty: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-// --- End Props type definition ---
-
-
-// Use the defined Props type for the component props
-export default function QuizDifficultyPage({ params }: Props) {
+  // searchParams?: { [key: string]: string | string[] | undefined }; // Optional: Add if needed, but often not required for the type constraint itself
+}) {
   const [answers, setAnswers] = useState<AnswersState>({});
   const [isValidDifficulty, setIsValidDifficulty] = useState(false);
   const router = useRouter();
   // Get difficulty directly from the destructured params prop
   const pageDifficulty = params.difficulty as Difficulty;
 
-  // Validate the difficulty from the URL (useEffect remains the same)
+  // Validate the difficulty from the URL
   useEffect(() => {
-    if (['easy', 'medium', 'hard'].includes(pageDifficulty)) {
-      setIsValidDifficulty(true);
+    // Check if pageDifficulty is one of the valid keys in quizData
+    if (pageDifficulty && Object.keys(quizData).includes(pageDifficulty)) {
+       setIsValidDifficulty(true);
     } else {
-      setIsValidDifficulty(false);
+       setIsValidDifficulty(false);
     }
-  }, [pageDifficulty]);
+  }, [pageDifficulty]); // Dependency array is correct
 
-  // Get the array of questions based on the difficulty from the URL params (useMemo remains the same)
+  // Get the array of questions based on the difficulty from the URL params
   const currentQuestions = useMemo(() => {
+    // Use the validated state
     if (!isValidDifficulty) return [];
+    // Access data using the validated key
     return quizData[pageDifficulty] || [];
-  }, [pageDifficulty, isValidDifficulty]);
+  }, [pageDifficulty, isValidDifficulty]); // Dependencies are correct
 
   // --- Event Handlers (remain the same) ---
   const handleAnswerChange = (questionId: string, value: string) => {
@@ -73,6 +74,7 @@ export default function QuizDifficultyPage({ params }: Props) {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    // Check validity again before submitting
     if (currentQuestions.length === 0 || !isValidDifficulty) return;
 
     let score = 0;
@@ -102,19 +104,22 @@ export default function QuizDifficultyPage({ params }: Props) {
   };
   // --- End Event Handlers ---
 
-  // Render invalid state if needed (remains the same)
-   if (!isValidDifficulty) {
+  // Render invalid state if needed
+   if (!isValidDifficulty && pageDifficulty) { // Only show error if pageDifficulty was accessed but invalid
      return (
         <main className="container mx-auto px-4 py-8 max-w-3xl text-center">
-            <p className="text-red-500 font-semibold">Invalid difficulty level: '{params.difficulty}'</p> {/* Show the invalid param */}
+            <p className="text-red-500 font-semibold">Invalid difficulty level: '{params.difficulty}'</p>
             <Link href="/quiz" className="text-blue-600 hover:underline mt-4 inline-block">
                 &larr; Choose Difficulty
             </Link>
         </main>
      );
    }
+   // Optional: Add a loading state before useEffect validates
+   // if (!pageDifficulty) { return <div>Loading...</div> }
 
-  // Main component rendering (remains the same)
+
+  // Main component rendering
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
       <h1 className="text-3xl font-bold mb-6 text-center">Ray Peat Knowledge Quiz</h1>
@@ -155,10 +160,13 @@ export default function QuizDifficultyPage({ params }: Props) {
             </div>
           </form>
         ) : (
-          <p className="text-center text-muted-foreground mt-10">
-            No questions found for the selected difficulty ('{pageDifficulty}'). Please check the data file (`quiz-questions.json`).
-             <Link href="/quiz" className="text-blue-600 hover:underline ml-2">Choose Difficulty</Link>
-          </p>
+           // Show this if validation passed but somehow no questions were found
+           isValidDifficulty && (
+             <p className="text-center text-muted-foreground mt-10">
+               No questions found for the selected difficulty ('{pageDifficulty}'). Please check the data file (`quiz-questions.json`).
+               <Link href="/quiz" className="text-blue-600 hover:underline ml-2">Choose Difficulty</Link>
+             </p>
+           )
         )}
       </>
     </main>
