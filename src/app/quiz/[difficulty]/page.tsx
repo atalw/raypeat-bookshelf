@@ -5,9 +5,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import quizDataJson from '@/data/quiz-questions.json';
-// Remove 'use' hook import if it's not used elsewhere
-import React, { useState, useMemo, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
+import { useRouter, useParams } from 'next/navigation'; // Import useParams
 import Link from 'next/link';
 
 // Define difficulty levels explicitly matching JSON keys
@@ -35,53 +34,36 @@ const quizData: QuizData = quizDataJson as QuizData;
 // Type for the answers state
 type AnswersState = { [questionId: string]: string | undefined; };
 
-// --- Define the expected props structure explicitly ---
-interface QuizDifficultyPageProps {
-  params: {
-    difficulty: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-// --- End props structure definition ---
-
-
-// --- Use the explicit type and assert the incoming props ---
-export default function QuizDifficultyPage(props: unknown) {
-  // --- Force type assertion here ---
-  const assertedProps = props as QuizDifficultyPageProps;
-  // --- End type assertion ---
-
-  // --- REMOVE the use() hook ---
-  // const resolvedParams = use(assertedProps.params);
-  // --- End removal ---
-
+// --- Remove params from props, use useParams hook instead ---
+export default function QuizDifficultyPage() {
+  const router = useRouter();
+  const params = useParams<{ difficulty: string }>(); // Use the hook
+  // --- Extract difficulty from the hook's result ---
+  const pageDifficultyParam = params?.difficulty; // Access difficulty, handle potential undefined
+  // --- End hook usage ---
 
   const [answers, setAnswers] = useState<AnswersState>({});
   const [isValidDifficulty, setIsValidDifficulty] = useState(false);
+  const [currentQuestions, setCurrentQuestions] = useState<QuizQuestion[]>([]);
+  const [difficulty, setDifficulty] = useState<Difficulty | null>(null); // Store validated difficulty
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const router = useRouter();
 
-  // --- Access difficulty directly from the ASSERTED params ---
-  // Use assertedProps.params directly
-  const pageDifficulty = assertedProps.params.difficulty as Difficulty;
-  // --- End access ---
-
-  // Validate the difficulty from the URL
+  // Validate the difficulty from the URL and set state
   useEffect(() => {
-    // Use pageDifficulty derived directly from assertedProps.params
-    if (pageDifficulty && Object.keys(quizData).includes(pageDifficulty)) {
+    // Use pageDifficultyParam obtained from useParams hook
+    const potentialDifficulty = pageDifficultyParam as Difficulty;
+    if (potentialDifficulty && Object.keys(quizData).includes(potentialDifficulty)) {
+       setDifficulty(potentialDifficulty);
        setIsValidDifficulty(true);
+       setCurrentQuestions(quizData[potentialDifficulty] || []);
     } else {
        setIsValidDifficulty(false);
+       setDifficulty(null);
+       setCurrentQuestions([]);
     }
-  }, [pageDifficulty]); // Dependency is correct
-
-  // Get the array of questions based on the difficulty from the URL params
-  const currentQuestions = useMemo(() => {
-    // Use isValidDifficulty which depends on pageDifficulty
-    if (!isValidDifficulty) return [];
-    return quizData[pageDifficulty] || [];
-  }, [pageDifficulty, isValidDifficulty]); // Dependencies are correct
+    // Reset answers when difficulty changes
+    setAnswers({});
+  }, [pageDifficultyParam]); // Depend on the param from the hook
 
   // --- Event Handlers (remain the same) ---
   const handleAnswerChange = (questionId: string, value: string) => {
@@ -91,7 +73,8 @@ export default function QuizDifficultyPage(props: unknown) {
   // --- Updated handleSubmit (remains the same logic) ---
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (currentQuestions.length === 0 || !isValidDifficulty || isSubmitting) return;
+    // Use the validated difficulty state and check currentQuestions length
+    if (!difficulty || currentQuestions.length === 0 || !isValidDifficulty || isSubmitting) return;
 
     setIsSubmitting(true);
 
@@ -105,7 +88,7 @@ export default function QuizDifficultyPage(props: unknown) {
       score,
       totalQuestions,
       userAnswers: answers,
-      difficulty: pageDifficulty, // Use pageDifficulty derived from assertedProps.params
+      difficulty: difficulty, // Use the validated difficulty state
       questionIds: currentQuestions.map(q => q.id)
     };
 
@@ -128,32 +111,39 @@ export default function QuizDifficultyPage(props: unknown) {
     } catch (error) {
       console.error("Failed to save results to sessionStorage:", error);
       alert("Could not save quiz results locally. Please try again.");
-      setIsSubmitting(false);
+      setIsSubmitting(false); // Ensure submitting state is reset on error
     }
+    // No need to setIsSubmitting(false) here if navigation succeeds
   };
   // --- End Event Handlers ---
 
-  // Render invalid state if needed
-   if (!isValidDifficulty && pageDifficulty) {
-     return (
-        <main className="container mx-auto px-4 py-8 max-w-3xl text-center">
-             {/* Access directly from assertedProps.params */}
-            <p className="text-red-500 font-semibold">Invalid difficulty level: '{assertedProps.params.difficulty}'</p>
-            <Link href="/quiz" className="text-blue-600 hover:underline mt-4 inline-block">
-                &larr; Choose Difficulty
-            </Link>
-        </main>
-     );
+  // Render invalid state if needed (check after useEffect runs)
+   if (!isValidDifficulty && difficulty === null) { // Check if validation failed
+     // Avoid rendering this briefly on initial load before useEffect runs
+     // Check if pageDifficultyParam (from hook) exists but validation failed
+     // Use the destructured pageDifficultyParam for the check
+     if (pageDifficultyParam && !Object.keys(quizData).includes(pageDifficultyParam)) {
+        return (
+            <main className="container mx-auto px-4 py-8 max-w-3xl text-center">
+                <p className="text-red-500 font-semibold">Invalid difficulty level: '{pageDifficultyParam}'</p>
+                <Link href="/quiz" className="text-blue-600 hover:underline mt-4 inline-block">
+                    &larr; Choose Difficulty
+                </Link>
+            </main>
+        );
+     }
+     // Optional: Render a loading state while useEffect runs initially
+     // return <main className="container mx-auto px-4 py-8 max-w-3xl text-center"><p>Loading...</p></main>;
    }
 
   // Main component rendering
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
-      <h1 className="text-3xl font-bold mb-6 text-center">Do you understand Ray Peat's work?</h1>
-      <>
-        {/* Use pageDifficulty derived from assertedProps.params */}
+      <h1 className="text-3xl font-bold mb-6 text-center">Do you understand Ray Peat?</h1>
+      {isValidDifficulty && difficulty ? ( // Render only when difficulty is valid
+        <>
         <p className="text-center text-muted-foreground mb-8">
-          Difficulty: <span className="font-semibold capitalize">{pageDifficulty}</span>. {currentQuestions.length} questions.
+          Difficulty: <span className="font-semibold capitalize">{difficulty}</span>. {currentQuestions.length} questions.
         </p>
         {currentQuestions.length > 0 ? (
           <form onSubmit={handleSubmit} className={`space-y-8 ${isSubmitting ? 'opacity-70 pointer-events-none' : ''}`}>
@@ -195,14 +185,18 @@ export default function QuizDifficultyPage(props: unknown) {
             </div>
           </form>
         ) : (
-           isValidDifficulty && (
+           ( // This case should ideally not be reached if validation logic is correct, but good fallback
              <p className="text-center text-muted-foreground mt-10">
-               No questions found for the selected difficulty ('{pageDifficulty}'). Please check the data file (`quiz-questions.json`).
+               No questions found for the selected difficulty ('{difficulty}'). Please check the data file (`quiz-questions.json`).
                <Link href="/quiz" className="text-blue-600 hover:underline ml-2">Choose Difficulty</Link>
              </p>
            )
         )}
       </>
+      ) : ( // Render loading or initial state
+        // Optional: Loading state or handle the case where validation is in progress/failed differently
+        !pageDifficultyParam ? <p>Loading difficulty...</p> : null // Check if destructured param exists
+      )}
     </main>
   );
 }

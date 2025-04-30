@@ -176,7 +176,7 @@ export default function ResultsPage() {
             onClick={handleShare}
           >
             <Share2 className="mr-2 h-4 w-4" /> {/* Using Share2 icon */}
-            Share Score on X
+            Share on X
           </Button>
           {/* --- End Share Button --- */}
 

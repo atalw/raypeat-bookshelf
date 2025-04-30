@@ -1,6 +1,8 @@
 // src/app/page.tsx
 import { BookGridClient } from '@/components/book-grid-client';
 // The Book type might now be better defined centrally or imported from the client component if not used elsewhere server-side
+import { Button } from '@/components/ui/button'; // Import Button
+import Link from 'next/link'; // Import Link
 // import { Book } from '@/components/book-card';
 import path from 'path'; // Keep path only for the "empty" message if needed
 
@@ -19,7 +21,12 @@ export default function HomePage() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-center sm:text-left">Ray Peat's Bookshelf</h1>
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+        <h1 className="text-3xl font-bold text-center sm:text-left">Ray Peat's Bookshelf</h1>
+        <Link href="/quiz" passHref>
+          <Button>Take the Quiz</Button>
+        </Link>
+      </div>
 
       {allBooks.length > 0 ? (
         // Render the Client Component and pass the imported books to it
@@ -28,8 +35,7 @@ export default function HomePage() {
       ) : (
         // Display message if no books were found during build
         <p className="text-center text-muted-foreground">
-          Your bookshelf is empty. Add PDF files (e.g., "YYYY - Author Name - Book Title.pdf") to the &apos;{BOOKS_DIRECTORY_RELATIVE}&apos; directory. You can also add corresponding cover images (e.g., "YYYY - Author Name - Book Title.jpg") to the &apos;{COVERS_DIRECTORY_RELATIVE}&apos; directory.
-          <br /> (Run the build again after adding files).
+          Your bookshelf is empty. 
         </p>
       )}
     </main>

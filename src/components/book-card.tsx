@@ -46,10 +46,11 @@ export function BookCard({ book }: BookCardProps) {
   // --- End Libgen URL Construction ---
 
   return (
-    // Main link wraps the whole card and goes to the PDF
-    <Link href={pdfLinkHref} target="_blank" rel="noopener noreferrer" className="group block">
-      <div className="border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 bg-card text-card-foreground overflow-hidden flex flex-col h-full">
+    // Use a div as the main container instead of a Link
+    <div className="group border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 bg-card text-card-foreground overflow-hidden flex flex-col h-full relative">
 
+      {/* Link wrapping the image and main text content, excluding the Libgen link */}
+      <Link href={pdfLinkHref} target="_blank" rel="noopener noreferrer" className="block flex flex-col flex-grow">
         {/* Image Container */}
         <div className="relative w-full aspect-square bg-muted overflow-hidden">
           {book.coverImageUrl ? (
@@ -70,8 +71,8 @@ export function BookCard({ book }: BookCardProps) {
 
         {/* Text Content Area */}
         <div className="p-3 flex flex-col flex-grow">
-          {/* Top section for Title and Author */}
-          <div className="mb-2">
+          {/* Top section for Title and Author - make this grow to push year/libgen down */}
+          <div className="mb-2 flex-grow">
             <h3 className="font-semibold text-sm leading-tight mb-1 line-clamp-3 group-hover:line-clamp-none">
               {book.title}
             </h3>
@@ -79,37 +80,33 @@ export function BookCard({ book }: BookCardProps) {
               {book.author}
             </p>
           </div>
-
-          {/* Bottom section for Year and Libgen Link */}
-          {/* Use flex, justify-between to push items apart, items-baseline for text alignment */}
-          <div className="mt-auto pt-1 flex justify-between items-baseline">
-            {/* Year (Left Side, conditional) */}
-            {book.year && (
-              <p className="text-xs text-muted-foreground"> {/* Display year */}
-                {book.year}
-              </p>
-            )}
-            {/* If year is missing, add a placeholder div to keep justify-between working correctly, pushing the link right */}
-            {!book.year && <div />}
-
-             {/* Libgen Link (Right Side) */}
-            <a
-              href={libgenUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              // Style as an inline link with an icon
-              className="inline-flex items-center text-xs text-blue-600 hover:text-blue-800 hover:underline z-10 relative"
-              // Stop the click from navigating the parent Link component
-              onClick={(e) => e.stopPropagation()}
-              title={`Search "${searchTerm}" on Libgen`} // Add a helpful title attribute
-            >
-              Search Libgen
-              <ExternalLink className="ml-1 h-3 w-3" /> {/* Icon */}
-            </a>
-          </div>
         </div>
+      </Link> {/* End of the main content link */}
 
+      {/* Bottom section for Year and Libgen Link - Positioned outside the main Link */}
+      {/* Use padding matching the text content area (p-3) but only horizontal (px-3) and bottom (pb-3) */}
+      <div className="px-3 pb-3 pt-1 flex justify-between items-baseline">
+        {/* Year (Left Side, conditional) */}
+        {book.year && (
+          <p className="text-xs text-muted-foreground"> {/* Display year */}
+            {book.year}
+          </p>
+        )}
+        {/* If year is missing, add a placeholder div to keep justify-between working correctly */}
+        {!book.year && <div />}
+
+        {/* Libgen Link (Right Side) - Now it's not nested inside another link */}
+        <a
+          href={libgenUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center text-xs text-blue-600 hover:text-blue-800 hover:underline z-10" // z-10 might not be needed anymore, but keep relative if needed for other styling
+          title={`Search "${searchTerm}" on Libgen`} // Add a helpful title attribute
+        >
+          Search Libgen
+          <ExternalLink className="ml-1 h-3 w-3" /> {/* Icon */}
+        </a>
       </div>
-    </Link>
+    </div> // End of the main container div
   );
 }
