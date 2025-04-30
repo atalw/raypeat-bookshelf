@@ -39,23 +39,18 @@ interface QuizDifficultyPageProps {
   params: {
     difficulty: string;
   };
-  // Include searchParams even if unused, as PageProps often expects it
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 // --- End props structure definition ---
 
 
 // --- Use the explicit type and assert the incoming props ---
-// Accept props as 'unknown' initially, then assert its type.
 export default function QuizDifficultyPage(props: unknown) {
-  // --- Force type assertion here ---
   const { params } = props as QuizDifficultyPageProps;
-  // --- End type assertion ---
 
   const [answers, setAnswers] = useState<AnswersState>({});
   const [isValidDifficulty, setIsValidDifficulty] = useState(false);
   const router = useRouter();
-  // Get difficulty directly from the asserted params prop
   const pageDifficulty = params.difficulty as Difficulty;
 
   // Validate the difficulty from the URL
@@ -136,20 +131,28 @@ export default function QuizDifficultyPage(props: unknown) {
                 <p className="font-semibold mb-4">
                   <span className="mr-2">{index + 1}.</span> {q.question}
                 </p>
+                {/* --- Updated RadioGroup Options --- */}
                 <RadioGroup
                   value={answers[q.id]}
                   onValueChange={(value) => handleAnswerChange(q.id, value)}
-                  className="space-y-3 pl-4"
+                  className="space-y-1 pl-4" // Reduced space-y slightly
                 >
                   {q.options.map((opt) => (
-                    <div key={opt.id} className="flex items-center space-x-2">
+                    // Use Label as the container for the entire row
+                    <Label
+                      key={opt.id} // Key on the Label now
+                      htmlFor={`q${q.id}-opt${opt.id}`} // Connect label to radio item
+                      // Add styling to make the whole label clickable and visually responsive
+                      className="flex items-center space-x-3 p-3 rounded-md hover:bg-accent cursor-pointer transition-colors" // Increased padding
+                    >
                       <RadioGroupItem value={opt.id} id={`q${q.id}-opt${opt.id}`} />
-                      <Label htmlFor={`q${q.id}-opt${opt.id}`} className="text-sm font-medium leading-none">
+                      <span className="text-sm font-medium leading-normal"> {/* Adjusted leading */}
                         {opt.text}
-                      </Label>
-                    </div>
+                      </span>
+                    </Label>
                   ))}
                 </RadioGroup>
+                {/* --- End Updated RadioGroup Options --- */}
               </div>
             ))}
             <div className="text-center mt-10 space-x-4">

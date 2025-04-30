@@ -6,7 +6,8 @@ import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import quizDataJson from '@/data/quiz-questions.json';
-import { CheckCircle, XCircle, BookOpen } from 'lucide-react';
+// Import Share2 icon (or find an X logo SVG if you prefer)
+import { CheckCircle, XCircle, BookOpen, Share2 } from 'lucide-react';
 
 // Define difficulty levels explicitly matching JSON keys
 type Difficulty = 'easy' | 'medium' | 'hard';
@@ -63,7 +64,6 @@ const ScoreSvg = ({ score, total }: { score: number; total: number }) => {
   if (percentage >= 75) strokeColor = "#22c55e"; // Green
   else if (percentage >= 40) strokeColor = "#eab308"; // Yellow
   return (
-    // Removed my-4 from SVG, spacing will be handled by parent CardContent
     <svg width="120" height="120" viewBox="0 0 120 120" className="mx-auto">
       <circle cx="60" cy="60" r={radius} stroke="#e5e7eb" strokeWidth="10" fill="transparent" className="dark:stroke-gray-600" />
       <circle cx="60" cy="60" r={radius} stroke={strokeColor} strokeWidth="10" fill="transparent" strokeDasharray={circumference} strokeDashoffset={offset} strokeLinecap="round" transform="rotate(-90 60 60)" />
@@ -131,36 +131,54 @@ export default function ResultsPage() {
   // Calculate percentage based on results data (remains the same)
   const percentage = results.totalQuestions > 0 ? Math.round((results.score / results.totalQuestions) * 100) : 0;
 
+  // --- Share Button Logic ---
+  const handleShare = () => {
+    if (!results) return;
+
+    // Use results.totalQuestions which reflects the actual number of questions for the difficulty
+    const shareText = `Scored ${results.score}/${results.totalQuestions} on the Ray Peat quiz (${results.difficulty} difficulty). What about you?`;
+    const quizUrl = 'https://raypeat.space/quiz'; // Your site's quiz URL
+
+    // Construct the Twitter Intent URL
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(quizUrl)}`;
+
+    // Open the URL in a new tab
+    window.open(twitterUrl, '_blank', 'noopener,noreferrer');
+  };
+  // --- End Share Button Logic ---
+
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
       {/* --- Results Card --- */}
       <Card className="mb-8">
-        {/* Header now only contains the main title */}
-        <CardHeader className="text-center pb-4"> {/* Adjusted padding */}
+        <CardHeader className="text-center pb-4">
           <CardTitle className="text-2xl">Quiz Results</CardTitle>
         </CardHeader>
-        {/* Content contains SVG, Difficulty, and Score Description */}
-        <CardContent className="text-center pt-0"> {/* Removed default top padding, will use margins */}
-          {/* SVG Score */}
+        <CardContent className="text-center pt-0">
           <ScoreSvg score={results.score} total={results.totalQuestions} />
-
-          {/* Difficulty - Added margin-top for spacing below SVG */}
-          <CardDescription className="text-sm capitalize font-medium mt-4"> {/* Adjusted margin */}
+          <CardDescription className="text-sm capitalize font-medium mt-4">
             Difficulty: {results.difficulty}
           </CardDescription>
-
-          {/* Score Description - Added margin-top for spacing below Difficulty */}
-          <CardDescription className="mt-1"> {/* Adjusted margin */}
+          <CardDescription className="mt-1">
             You scored {results.score} out of {results.totalQuestions} ({percentage}%)
           </CardDescription>
-
-          {/* --- Conditional Fake Peater Alert --- */}
           {results.score < 17 && (
             <p className="mt-4 text-red-600 dark:text-red-500 font-bold text-lg animate-pulse">
               🚨🚨🚨 FAKE PEATER ALERT 🚨🚨🚨
             </p>
           )}
-          {/* --- End Conditional Alert --- */}
+
+          {/* --- Share Button --- */}
+          <Button
+            variant="outline"
+            size="sm"
+            className="mt-6" // Add margin top for spacing
+            onClick={handleShare}
+          >
+            <Share2 className="mr-2 h-4 w-4" /> {/* Using Share2 icon */}
+            Share Score on X
+          </Button>
+          {/* --- End Share Button --- */}
 
         </CardContent>
       </Card>
