@@ -92,9 +92,6 @@ export default function QuizDifficultyPage() {
       questionIds: currentQuestions.map(q => q.id)
     };
 
-    console.log("Quiz submitted. Preparing to log...");
-    console.log("Data:", resultData);
-
     try {
       // Ensure fetch options are correctly passed if needed
       const response = await fetch('/api/log-quiz', {
@@ -102,7 +99,9 @@ export default function QuizDifficultyPage() {
           headers: { 'Content-Type': 'application/json' }, // Specify content type
           body: JSON.stringify(resultData)
       });
-      if (!response.ok) { console.error(`API log request failed: ${response.status}`); } else { console.log('API log request successful.'); }
+      if (!response.ok) {
+        console.error(`API log request failed: ${response.status}`);
+      }
     } catch (error) { console.error('Error sending log data to API:', error); }
 
     try {
