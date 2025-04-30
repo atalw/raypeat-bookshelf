@@ -877,6 +877,131 @@
       "explanation": "Peat suggested that improving oxidative metabolism using sugar and thyroid increases endogenous CO\u2082 production.",
       "furtherReading": "Search 'Ray Peat carbon dioxide thyroid sugar site:raypeat.com'"
     }
+    {
+      "id": "q36",
+      "question": "Which dietary fat did Peat describe as inherently suppressive of thyroid function and mitochondrial respiration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saturated fat"
+        },
+        {
+          "id": "b",
+          "text": "Monounsaturated fat"
+        },
+        {
+          "id": "c",
+          "text": "Polyunsaturated fat (PUFA)"
+        },
+        {
+          "id": "d",
+          "text": "Medium-chain triglycerides (MCTs)"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Peat consistently warned that PUFAs suppress the thyroid and interfere with oxidative metabolism.",
+      "furtherReading": "Search 'Ray Peat PUFA thyroid site:raypeat.com'"
+    },
+    {
+      "id": "q37",
+      "question": "Why did Peat advocate using sugar in states of stress or illness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To stimulate lipolysis and ketone formation"
+        },
+        {
+          "id": "b",
+          "text": "To increase serotonin and reduce sleep latency"
+        },
+        {
+          "id": "c",
+          "text": "To provide immediate oxidative fuel and reduce stress hormones"
+        },
+        {
+          "id": "d",
+          "text": "To increase lactic acid and reduce inflammation"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Peat promoted sugar as an oxidative fuel that can lower cortisol and help the body cope with stress.",
+      "furtherReading": "Search 'Ray Peat sugar cortisol stress site:raypeat.com'"
+    },
+    {
+      "id": "q38",
+      "question": "How did Peat describe the relationship between calcium and phosphate in aging and inflammation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High calcium and phosphate intake is beneficial."
+        },
+        {
+          "id": "b",
+          "text": "Calcium should be avoided to prevent calcification."
+        },
+        {
+          "id": "c",
+          "text": "An excess of phosphate over calcium promotes inflammation and aging."
+        },
+        {
+          "id": "d",
+          "text": "Phosphate supports thyroid while calcium suppresses it."
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "Peat argued that high phosphate relative to calcium promotes soft tissue calcification, aging, and inflammation.",
+      "furtherReading": "Search 'Ray Peat calcium phosphate inflammation site:raypeat.com'"
+    },
+    {
+      "id": "q39",
+      "question": "Which nightly pattern did Peat describe as associated with tissue breakdown and hormone imbalance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased melatonin and reduced serotonin"
+        },
+        {
+          "id": "b",
+          "text": "Midnight cortisol surge with protein catabolism"
+        },
+        {
+          "id": "c",
+          "text": "Nocturnal growth hormone spike and bone formation"
+        },
+        {
+          "id": "d",
+          "text": "CO\u2082 rise and adrenal suppression"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Peat noted that during the night, cortisol often rises, breaking down tissue for fuel and promoting catabolic states.",
+      "furtherReading": "Search 'Ray Peat cortisol night catabolism site:raypeat.com'"
+    },
+    {
+      "id": "q40",
+      "question": "Which common dietary recommendation did Peat frequently critique for worsening metabolism and energy production?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Low-fat, high-fiber vegan diets"
+        },
+        {
+          "id": "b",
+          "text": "Moderate-carb Mediterranean diets"
+        },
+        {
+          "id": "c",
+          "text": "Intermittent fasting with high-protein meals"
+        },
+        {
+          "id": "d",
+          "text": "Paleolithic ketogenic diet"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Peat was critical of low-fat, high-fiber vegan diets, arguing they suppress thyroid and energy production.",
+      "furtherReading": "Search 'Ray Peat vegan diet energy thyroid site:raypeat.com'"
+    }
   ],
   "hard": [
     {
