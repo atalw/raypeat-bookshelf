@@ -2,1507 +2,1382 @@
   "easy": [
     {
       "id": "q1",
-      "question": "Sample easy question 1?",
+      "question": "What is Ray Peat's professional background?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Medical doctor"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Biochemist and physiologist"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Nutritionist"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Pharmacologist"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Ray Peat was known as a biochemist and physiologist with a focus on cellular energy and metabolism.",
+      "furtherReading": "Search 'Ray Peat biography site:raypeat.com'"
     },
     {
       "id": "q2",
-      "question": "Sample easy question 2?",
+      "question": "Which hormone did Ray Peat frequently advocate as protective against stress and aging?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Estrogen"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Cortisol"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Progesterone"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Testosterone"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat emphasized progesterone for its protective and anti-stress properties, particularly in women.",
+      "furtherReading": "Search 'Ray Peat progesterone site:raypeat.com'"
     },
     {
       "id": "q3",
-      "question": "Sample easy question 3?",
+      "question": "Which fuel source did Peat consider more oxidative and efficient for cellular energy?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Fat"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Protein"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Glucose"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Lactate"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Glucose oxidation produces more carbon dioxide and is considered more efficient by Peat.",
+      "furtherReading": "Search 'Ray Peat glucose oxidation site:raypeat.com'"
     },
     {
       "id": "q4",
-      "question": "Sample easy question 4?",
+      "question": "Which compound did Ray Peat describe as increasing carbon dioxide production in cells?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Glucose"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "PUFAs"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Ethanol"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Lactate"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "a",
+      "explanation": "Peat frequently cited glucose oxidation as a major source of cellular carbon dioxide.",
+      "furtherReading": "Search 'Ray Peat glucose CO2 production site:raypeat.com'"
     },
     {
       "id": "q5",
-      "question": "Sample easy question 5?",
+      "question": "Which vitamin did Peat often pair with aspirin to reduce its side effects?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Vitamin A"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Vitamin D"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Vitamin K2"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Vitamin E"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat recommended using vitamin K2 to counteract aspirin-induced bleeding risks.",
+      "furtherReading": "Search 'Ray Peat aspirin vitamin K site:raypeat.com'"
     },
     {
       "id": "q6",
-      "question": "Sample easy question 6?",
+      "question": "Which fat type did Peat consistently warn against for promoting inflammation and aging?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Saturated fat"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Monounsaturated fat"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Polyunsaturated fat"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Trans fat"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat strongly opposed polyunsaturated fats due to their role in lipid peroxidation and stress.",
+      "furtherReading": "Search 'Ray Peat PUFA site:raypeat.com'"
     },
     {
       "id": "q7",
-      "question": "Sample easy question 7?",
+      "question": "According to Peat, which dietary substance improves mitochondrial respiration?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Omega-3 oil"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Sugar"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Alcohol"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Tryptophan"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat advocated for sugar, especially sucrose, as a supporter of mitochondrial respiration.",
+      "furtherReading": "Search 'Ray Peat sugar mitochondria site:raypeat.com'"
     },
     {
       "id": "q8",
-      "question": "Sample easy question 8?",
+      "question": "Which gas did Peat claim improves tissue oxygenation by stabilizing hemoglobin function?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Nitric oxide"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Carbon monoxide"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Carbon dioxide"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Ozone"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Carbon dioxide improves oxygen delivery by reducing hemoglobin\u2019s affinity for oxygen.",
+      "furtherReading": "Search 'Ray Peat CO2 Bohr effect site:raypeat.com'"
     },
     {
       "id": "q9",
-      "question": "Sample easy question 9?",
+      "question": "Which of these did Ray Peat describe as a protective anesthetic and anti-tumor agent?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Serotonin"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Lidocaine"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Morphine"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Chlorophyll"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat discussed systemic lidocaine use as anti-inflammatory and potentially anti-tumor.",
+      "furtherReading": "Search 'Ray Peat lidocaine inflammation cancer site:raypeat.com'"
     },
     {
       "id": "q10",
-      "question": "Sample easy question 10?",
+      "question": "Which neurotransmitter did Peat associate with learned helplessness and stress pathology?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Dopamine"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "GABA"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Serotonin"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Acetylcholine"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat considered serotonin to promote stress, inflammation, and depressive states.",
+      "furtherReading": "Search 'Ray Peat serotonin stress site:raypeat.com'"
     },
     {
       "id": "q11",
-      "question": "Sample easy question 11?",
+      "question": "Which mineral did Ray Peat associate with reducing inflammation and supporting thyroid function?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Iron"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Zinc"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Calcium"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Magnesium"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "d",
+      "explanation": "Peat often recommended magnesium for reducing stress and supporting metabolic functions including the thyroid.",
+      "furtherReading": "Search 'Ray Peat magnesium thyroid site:raypeat.com'"
     },
     {
       "id": "q12",
-      "question": "Sample easy question 12?",
+      "question": "What dietary item did Peat often recommend to support liver function and detoxification?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Beet juice"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Raw carrots"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Olive oil"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Spinach"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat frequently advocated raw carrots for their antibacterial fiber and liver-detox support.",
+      "furtherReading": "Search 'Ray Peat raw carrot liver site:raypeat.com'"
     },
     {
       "id": "q13",
-      "question": "Sample easy question 13?",
+      "question": "What is the main oxidative energy cycle discussed by Ray Peat?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Calvin cycle"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Krebs cycle"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Glyoxylate cycle"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Cori cycle"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "The Krebs cycle (citric acid cycle) is central to Peat's discussion of cellular respiration and energy production.",
+      "furtherReading": "Search 'Ray Peat Krebs cycle site:raypeat.com'"
     },
     {
       "id": "q14",
-      "question": "Sample easy question 14?",
+      "question": "Which food product did Peat support for its bioavailable calcium and anti-inflammatory profile?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Liver"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Milk"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Egg yolks"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Fish oil"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat frequently promoted milk as a high-quality food source rich in calcium and low in inflammatory PUFAs.",
+      "furtherReading": "Search 'Ray Peat milk calcium inflammation site:raypeat.com'"
     },
     {
       "id": "q15",
-      "question": "Sample easy question 15?",
+      "question": "What environmental factor did Peat believe had powerful effects on stress and metabolism?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Cold showers"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Darkness"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "High altitude"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Salt air"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat described darkness as a stressor that lowers metabolic rate and increases inflammatory mediators.",
+      "furtherReading": "Search 'Ray Peat stress darkness metabolism site:raypeat.com'"
     },
     {
       "id": "q16",
-      "question": "Sample easy question 16?",
+      "question": "Which hormone did Peat warn could suppress mitochondrial respiration and promote stress?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Insulin"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Cortisol"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "DHEA"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Melatonin"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat frequently warned that cortisol, a stress hormone, suppresses thyroid and mitochondrial function.",
+      "furtherReading": "Search 'Ray Peat cortisol mitochondria site:raypeat.com'"
     },
     {
       "id": "q17",
-      "question": "Sample easy question 17?",
+      "question": "Peat believed that aging involves a shift from glucose to what kind of metabolism?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Lipid-based metabolism"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Protein synthesis"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Anaerobic fermentation"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Ketone body generation"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "a",
+      "explanation": "Peat described aging as involving a shift from glucose oxidation to fat metabolism, which he associated with stress and inefficiency.",
+      "furtherReading": "Search 'Ray Peat aging fat metabolism site:raypeat.com'"
     },
     {
       "id": "q18",
-      "question": "Sample easy question 18?",
+      "question": "Which of the following best summarizes Peat's stance on estrogen?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Essential and universally protective"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Useful only post-menopause"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Overproduced and generally harmful"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Neutral and context-dependent"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat consistently described estrogen as a stress hormone that promotes inflammation and cancer.",
+      "furtherReading": "Search 'Ray Peat estrogen danger site:raypeat.com'"
     },
     {
       "id": "q19",
-      "question": "Sample easy question 19?",
+      "question": "Which peptide did Peat mention as rising during stress and interfering with blood sugar regulation?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Insulin"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "Growth hormone"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Glucagon"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Prolactin"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Growth hormone increases during stress and promotes fat oxidation, which Peat viewed as problematic.",
+      "furtherReading": "Search 'Ray Peat growth hormone stress site:raypeat.com'"
     },
     {
       "id": "q20",
-      "question": "Sample easy question 20?",
+      "question": "Which energy-related molecule did Peat associate with both contraction and relaxation in muscles?",
       "options": [
         {
           "id": "a",
-          "text": "Easy Option A"
+          "text": "Glucose"
         },
         {
           "id": "b",
-          "text": "Easy Option B"
+          "text": "ATP"
         },
         {
           "id": "c",
-          "text": "Easy Option C"
+          "text": "Lactic acid"
         },
         {
           "id": "d",
-          "text": "Easy Option D"
+          "text": "Creatine"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a easy level question.",
-      "furtherReading": "Search for: 'Ray Peat easy topics', 'metabolic health easy Ray Peat'"
+      "explanation": "Peat emphasized ATP\u2019s role in both contraction and relaxation phases of muscle function, linking it to energy balance.",
+      "furtherReading": "Search 'Ray Peat ATP muscle contraction site:raypeat.com'"
     }
-  ],
+  ],  
   "medium": [
     {
       "id": "q21",
-      "question": "Sample medium question 1?",
+      "question": "Which effect of progesterone did Peat highlight in relation to improving brain function and resisting aging?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Progesterone increases serotonin levels and reduces oxidative stress."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Progesterone inhibits age pigment and promotes nerve regeneration."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Progesterone blocks insulin and raises ketone levels."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Progesterone increases estrogen receptor activity in the brain."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat emphasized that progesterone inhibits lipofuscin (age pigment) and supports brain and nerve tissue regeneration.",
+      "furtherReading": "Search 'Ray Peat progesterone brain regeneration site:raypeat.com'"
     },
     {
       "id": "q22",
-      "question": "Sample medium question 2?",
+      "question": "How did Peat interpret the effects of carbon monoxide on cell metabolism?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "It oxidizes heme and enhances respiration."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "It reduces cellular redox potential and promotes hydroxyl radical formation."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "It stimulates CO\u2082 production and mitochondrial uncoupling."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "It acts as a neurotransmitter to suppress thyroid hormone."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat explained that carbon monoxide leads to a reduced cellular state, enabling iron to produce hydroxyl radicals and cellular damage.",
+      "furtherReading": "Search 'Ray Peat carbon monoxide hydroxyl radical site:raypeat.com'"
     },
     {
       "id": "q23",
-      "question": "Sample medium question 3?",
+      "question": "What did Peat suggest was a major flaw in the neo-Darwinist model of evolution?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "It overemphasizes mitochondrial inheritance."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "It depends on unproven hormonal feedback loops."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "It views complexity as arising from deletion and random mutation."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "It fails to account for radiation-induced speciation."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat criticized neo-Darwinism for relying on models of random mutation and genetic deletion to explain biological complexity.",
+      "furtherReading": "Search 'Ray Peat neo-Darwinism deletion site:raypeat.com'"
     },
     {
       "id": "q24",
-      "question": "Sample medium question 4?",
+      "question": "What role does lactic acid play in Peat\u2019s model of stressed or cancerous metabolism?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "It increases cellular pH and enhances mitochondrial efficiency."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "It reduces inflammation and enhances repair."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "It contributes to reductive stress and suppresses immune cell function."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "It neutralizes serotonin and supports synaptic growth."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat noted that excess lactate contributes to a reduced cellular state, blocking respiration and impairing immune function.",
+      "furtherReading": "Search 'Ray Peat lactic acid cancer site:raypeat.com'"
     },
     {
       "id": "q25",
-      "question": "Sample medium question 5?",
+      "question": "In Peat\u2019s view, what physiological role does CO\u2082 play in relation to the Bohr effect?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "It increases calcium retention and alkalizes blood pH."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "It improves oxygen delivery by lowering hemoglobin\u2019s affinity for O\u2082."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "It activates white blood cells and histamine release."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "It reduces glutamate sensitivity in the brain."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat described CO\u2082 as enhancing oxygen unloading from hemoglobin, supporting tissue oxygenation via the Bohr effect.",
+      "furtherReading": "Search 'Ray Peat Bohr effect CO2 site:raypeat.com'"
     },
     {
       "id": "q26",
-      "question": "Sample medium question 6?",
+      "question": "What did Peat describe as the main biochemical action of ATP in muscle contraction?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Providing energy for myosin-actin sliding through phosphate bond cleavage."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Acting through electron withdrawal to change cellular structure."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Decreasing calcium uptake and inhibiting nerve firing."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Stimulating serotonin release from synapses."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat supported Gilbert Ling's view that ATP acts via electron-withdrawing effects rather than bond energy release.",
+      "furtherReading": "Search 'Ray Peat ATP Gilbert Ling site:raypeat.com'"
     },
     {
       "id": "q27",
-      "question": "Sample medium question 7?",
+      "question": "Which molecule did Peat describe as both a free radical intermediate and a vital metabolic antioxidant?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Vitamin D3"
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Semidehydroascorbate"
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Alpha-tocopherol"
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Niacinamide"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat noted semidehydroascorbate, a form of oxidized vitamin C, as a key antioxidant and free radical intermediate.",
+      "furtherReading": "Search 'Ray Peat semidehydroascorbate antioxidant site:raypeat.com'"
     },
     {
       "id": "q28",
-      "question": "Sample medium question 8?",
+      "question": "What dietary strategy did Peat recommend to support a balanced blood sugar profile and reduce nocturnal stress hormones?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Low-carb, high-fat keto diet"
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "High-protein carnivore diet"
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Frequent intake of sugar and gelatin"
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Fast until noon and then eat high protein meals"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat emphasized that sugar and gelatin reduce stress hormones like cortisol and support blood sugar stability.",
+      "furtherReading": "Search 'Ray Peat sugar gelatin cortisol site:raypeat.com'"
     },
     {
       "id": "q29",
-      "question": "Sample medium question 9?",
+      "question": "How did Peat describe nitric oxide\u2019s (NO) role in inflamed or cancerous tissues?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "It promotes oxygen transport and energy efficiency."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "It blocks glutamate signaling and neuronal death."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "It activates stress enzymes and promotes angiogenesis."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "It neutralizes serotonin and facilitates deep sleep."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat emphasized nitric oxide\u2019s role in promoting inflammation, angiogenesis, and supporting tumor metabolism.",
+      "furtherReading": "Search 'Ray Peat nitric oxide inflammation cancer site:raypeat.com'"
     },
     {
       "id": "q30",
-      "question": "Sample medium question 10?",
+      "question": "Why did Peat prefer saturated fats like coconut oil over polyunsaturated fats (PUFAs)?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Saturated fats increase LDL cholesterol and reduce estrogen."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Saturated fats stabilize oxygen use and resist lipid peroxidation."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "PUFAs are ketogenic and promote liver hypertrophy."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Coconut oil raises serotonin levels."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat opposed PUFAs for being highly oxidizable and preferred saturated fats for their metabolic stability.",
+      "furtherReading": "Search 'Ray Peat coconut oil PUFA oxidation site:raypeat.com'"
     },
     {
       "id": "q31",
-      "question": "Sample medium question 11?",
+      "question": "According to Peat, what metabolic characteristic is common to aging, cancer, and trauma?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Increased glycolysis with reduced fat oxidation."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Increased glucose oxidation and CO\u2082 production."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Suppressed mitochondrial respiration with elevated fat oxidation."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "High thyroid activity and anabolic state."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat pointed out that aging, cancer, and trauma all share suppressed mitochondrial function and reliance on fat for energy.",
+      "furtherReading": "Search 'Ray Peat aging cancer trauma metabolism site:raypeat.com'"
     },
     {
       "id": "q32",
-      "question": "Sample medium question 12?",
+      "question": "Which enzyme system does Peat mention being inhibited by aspirin, thus reducing inflammation and cancer progression?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Monoamine oxidase"
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Adenylate cyclase"
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Cyclooxygenase (COX)"
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "ATP synthase"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat cited aspirin\u2019s ability to inhibit COX enzymes, reducing prostaglandins and inflammation.",
+      "furtherReading": "Search 'Ray Peat aspirin cyclooxygenase site:raypeat.com'"
     },
     {
       "id": "q33",
-      "question": "Sample medium question 13?",
+      "question": "What effect did Peat describe serotonin as having on metabolism and mood?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Elevates metabolic rate and improves mood"
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Reduces cortisol and enhances thyroid function"
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Inhibits metabolism and promotes depression"
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Increases dopamine signaling and lowers inflammation"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat viewed serotonin as a stress chemical that suppresses energy metabolism and worsens depression.",
+      "furtherReading": "Search 'Ray Peat serotonin metabolism depression site:raypeat.com'"
     },
     {
       "id": "q34",
-      "question": "Sample medium question 14?",
+      "question": "In Peat\u2019s writings, what function does glycine serve in balancing dietary amino acid intake?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Promotes insulin resistance in stress states."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Balances methionine and reduces inflammation."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Increases iron absorption and serotonin synthesis."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Inhibits T3 activity and promotes estrogen clearance."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "explanation": "Peat emphasized that glycine, found in gelatin, balances inflammatory amino acids like methionine and cysteine.",
+      "furtherReading": "Search 'Ray Peat glycine methionine inflammation site:raypeat.com'"
     },
     {
       "id": "q35",
-      "question": "Sample medium question 15?",
+      "question": "How did Peat suggest CO\u2082 levels can be increased physiologically?",
       "options": [
         {
           "id": "a",
-          "text": "Medium Option A"
+          "text": "Inhaling air enriched with nitrogen."
         },
         {
           "id": "b",
-          "text": "Medium Option B"
+          "text": "Reducing thyroid hormone intake."
         },
         {
           "id": "c",
-          "text": "Medium Option C"
+          "text": "Eating more unsaturated fats."
         },
         {
           "id": "d",
-          "text": "Medium Option D"
+          "text": "Improving glucose oxidation through thyroid and sugar."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
-    },
-    {
-      "id": "q36",
-      "question": "Sample medium question 16?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Medium Option A"
-        },
-        {
-          "id": "b",
-          "text": "Medium Option B"
-        },
-        {
-          "id": "c",
-          "text": "Medium Option C"
-        },
-        {
-          "id": "d",
-          "text": "Medium Option D"
-        }
-      ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
-    },
-    {
-      "id": "q37",
-      "question": "Sample medium question 17?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Medium Option A"
-        },
-        {
-          "id": "b",
-          "text": "Medium Option B"
-        },
-        {
-          "id": "c",
-          "text": "Medium Option C"
-        },
-        {
-          "id": "d",
-          "text": "Medium Option D"
-        }
-      ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
-    },
-    {
-      "id": "q38",
-      "question": "Sample medium question 18?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Medium Option A"
-        },
-        {
-          "id": "b",
-          "text": "Medium Option B"
-        },
-        {
-          "id": "c",
-          "text": "Medium Option C"
-        },
-        {
-          "id": "d",
-          "text": "Medium Option D"
-        }
-      ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
-    },
-    {
-      "id": "q39",
-      "question": "Sample medium question 19?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Medium Option A"
-        },
-        {
-          "id": "b",
-          "text": "Medium Option B"
-        },
-        {
-          "id": "c",
-          "text": "Medium Option C"
-        },
-        {
-          "id": "d",
-          "text": "Medium Option D"
-        }
-      ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
-    },
-    {
-      "id": "q40",
-      "question": "Sample medium question 20?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Medium Option A"
-        },
-        {
-          "id": "b",
-          "text": "Medium Option B"
-        },
-        {
-          "id": "c",
-          "text": "Medium Option C"
-        },
-        {
-          "id": "d",
-          "text": "Medium Option D"
-        }
-      ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a medium level question.",
-      "furtherReading": "Search for: 'Ray Peat medium topics', 'metabolic health medium Ray Peat'"
+      "correctAnswerId": "d",
+      "explanation": "Peat suggested that improving oxidative metabolism using sugar and thyroid increases endogenous CO\u2082 production.",
+      "furtherReading": "Search 'Ray Peat carbon dioxide thyroid sugar site:raypeat.com'"
     }
   ],
   "hard": [
     {
       "id": "q41",
-      "question": "Sample hard question 1?",
+      "question": "According to Ray Peat, what role does carbon dioxide play in morphogenetic field sensitivity and regeneration?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "It increases mitochondrial ATP production, indirectly stimulating stem cell division."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "It acidifies tissues, reducing oxygen delivery and regeneration potential."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "It enhances the ability of proteins and cells to respond to organizational signals."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "It depletes reactive oxygen species, protecting DNA from mutation."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat writes that carbon dioxide improves the responsiveness of proteins and cells to morphogenetic fields, enhancing regenerative processes.",
+      "furtherReading": "Search 'carbon dioxide morphogenetic regeneration site:raypeat.com'"
     },
     {
       "id": "q42",
-      "question": "Sample hard question 2?",
+      "question": "What was Ray Peat's interpretation of the 'cancer field' phenomenon mentioned in developmental biology of the 1930s?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "A pre-cancerous region that emits growth inhibitors to surrounding tissues."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "An energy-deficient area with disrupted intracellular communication and reduced CO\u2082."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "An electromagnetic anomaly disrupting DNA replication."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "A localized accumulation of estrogen precursors initiating mitosis."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat noted that before cancer develops, the surrounding region often shows a shift in metabolism away from oxidative energy, with reduced CO\u2082 and impaired signaling.",
+      "furtherReading": "Search 'Ray Peat cancer field metabolism site:raypeat.com'"
     },
     {
       "id": "q43",
-      "question": "Sample hard question 3?",
+      "question": "What environmental condition did Peat associate with fingertip regeneration, likely due to increased local CO\u2082 retention?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Application of topical progesterone."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Submersion in saline solution."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Enclosure in a sealed tube, like a pen or cigar tube."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Exposure to near-infrared light."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat described successful fingertip regeneration in people who enclosed the wound in tubes, possibly trapping moisture and CO\u2082.",
+      "furtherReading": "Search 'Ray Peat fingertip regeneration cigar tube site:raypeat.com'"
     },
     {
       "id": "q44",
-      "question": "Sample hard question 4?",
+      "question": "What specific embryological observation did Peat cite to argue that nuclear genes do not dictate the early cleavage pattern of embryos?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Octopus embryos failed to differentiate after nucleus removal."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Sea urchin nuclei transplanted into snail eggs followed snail cleavage patterns."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Frog embryos injected with human RNA formed humanlike tissues."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Mouse nuclei in rat oocytes produced hybrid mitochondrial distributions."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat recounted experiments showing that cytoplasm dictated cleavage pattern, not the transplanted nucleus, arguing against genetic determinism.",
+      "furtherReading": "Search 'Ray Peat embryology cleavage pattern nucleus site:raypeat.com'"
     },
     {
       "id": "q45",
-      "question": "Sample hard question 5?",
+      "question": "How did Peat characterize the Weismann-Morgan doctrine regarding complexity in biology?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Complexity arises from integrative cooperation among organ systems."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "It is driven by environmental feedback and purpose-directed adaptation."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "It results from selective deletion and loss of cellular potential."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "It is a balance between entropy and genetic robustness."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat argued that Weismann and Morgan framed biological development as complexity emerging from deletion\u2014loss rather than addition.",
+      "furtherReading": "Search 'Ray Peat Weismann Morgan deletion site:raypeat.com'"
     },
     {
       "id": "q46",
-      "question": "Sample hard question 6?",
+      "question": "Which of the following agents did Ray Peat consider essential in reducing inappropriate excitation and supporting regeneration?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Calcium, iron, serotonin, and estrogen."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Thyroid, glycine, CO\u2082, progesterone, and sugar."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "B12, magnesium, zinc, and melatonin."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Choline, omega-3s, ATP, and cortisol."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat often repeated that thyroid, glycine, CO\u2082, progesterone, and sugar support energy metabolism and regenerative processes.",
+      "furtherReading": "Search 'Ray Peat CO2 progesterone glycine thyroid sugar site:raypeat.com'"
     },
     {
       "id": "q47",
-      "question": "Sample hard question 7?",
+      "question": "Which 20th-century physiological idea did Peat mock for trying to explain learning via neuron deletion?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Neurogenesis in the adult hippocampus."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "The Hebbian theory of plasticity."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "The deletion theory of memory encoding using brain cell loss."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Synaptic tagging and capture hypothesis."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat recalled a widely promoted article in *Science* claiming brain cells die daily to encode experience, which he criticized as absurd.",
+      "furtherReading": "Search 'Ray Peat neuron deletion learning site:raypeat.com'"
     },
     {
       "id": "q48",
-      "question": "Sample hard question 8?",
+      "question": "In Peat\u2019s view, how does the streaming regeneration model, as explored by Zajicek, conflict with conventional views of cell aging?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "It shows that aging is genetically pre-programmed."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "It demonstrates random cell turnover has no order."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "It reveals orderly, directional renewal even in tissues considered post-mitotic."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "It supports that aging is driven by telomere shortening."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat cited Zajicek\u2019s work on streaming cell turnover, challenging the dogma that somatic cells are irreversibly aged.",
+      "furtherReading": "Search 'Ray Peat Zajicek streaming renewal site:raypeat.com'"
     },
     {
       "id": "q49",
-      "question": "Sample hard question 9?",
+      "question": "Which quote best represents Peat's critique of Descartes and mechanistic materialism in biology?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "\"Descartes established the foundational biology of consciousness through logic.\""
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "\"Cartesian dualism is essential for separating mind from physiology.\""
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "\"The absurdities of 20th century biology all stem from Descartes' mechanistic doctrine.\""
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "\"Genetic materialism is a necessary consequence of Cartesian clarity.\""
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat believed Descartes\u2019 influence led to false doctrines such as cells being intrinsically mortal and lacking intelligence.",
+      "furtherReading": "Search 'Ray Peat Descartes dualism mechanistic site:raypeat.com'"
     },
     {
       "id": "q50",
-      "question": "Sample hard question 10?",
+      "question": "Which compound did Peat mention as contributing to both the inhibition of aromatase and acting as a pro-oxidant under certain metabolic states?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Lycopene"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Fisetin"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Melatonin"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Glutathione"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat noted that fisetin, a flavonoid, can act as a pro-oxidant and inhibits enzymes like aromatase under certain redox states.",
+      "furtherReading": "Search 'Ray Peat fisetin aromatase pro-oxidant site:raypeat.com'"
     },
     {
       "id": "q51",
-      "question": "Sample hard question 11?",
+      "question": "According to Peat, what substance accumulates in aging tissues and impairs morphogenetic signaling due to its light-absorbing properties?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Melanin"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Lipofuscin"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Iron sulfide"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Beta-carotene"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Lipofuscin is mentioned by Peat as a major age pigment that interferes with morphogenetic and mitogenetic light signaling.",
+      "furtherReading": "Search 'Ray Peat lipofuscin morphogenesis site:raypeat.com'"
     },
     {
       "id": "q52",
-      "question": "Sample hard question 12?",
+      "question": "Which molecule did Peat identify as a natural oxidative dicarbonyl implicated in both cancer suppression and toxicity depending on context?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Pyruvate"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Methylglyoxal"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Succinate"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Fumarate"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat noted methylglyoxal as a naturally occurring dicarbonyl with cancer-suppressive effects in certain oxidative states.",
+      "furtherReading": "Search 'Ray Peat methylglyoxal cancer site:raypeat.com'"
     },
     {
       "id": "q53",
-      "question": "Sample hard question 13?",
+      "question": "Which of the following did Peat argue could restore the Pasteur effect in ascites cancer cells?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Sodium butyrate"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "High fat and low glucose"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Oxygen and glucose together"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Lactate and insulin"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat referenced Shapot's work showing that both oxygen and glucose together could restore respiration in tumor cells.",
+      "furtherReading": "Search 'Ray Peat Pasteur effect ascites site:raypeat.com'"
     },
     {
       "id": "q54",
-      "question": "Sample hard question 14?",
+      "question": "Which enzyme did Peat say is inactivated by chemical reduction of its disulfide bonds, thus promoting cancer metabolism?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Pyruvate dehydrogenase"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Phosphofructokinase"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Cyclooxygenase"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Glutathione reductase"
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Cyclooxygenase, like aromatase and nitric oxide synthase, becomes active when its disulfide bonds are chemically reduced.",
+      "furtherReading": "Search 'Ray Peat cyclooxygenase disulfide cancer site:raypeat.com'"
     },
     {
       "id": "q55",
-      "question": "Sample hard question 15?",
+      "question": "What reason did Peat give for aspirin acting as a pro-oxidant in yeast and mammalian cells?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "It donates electrons to NADH."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "It increases lactic acid production."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "It lowers cellular reducing power and raises mitochondrial respiration."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "It binds to iron and generates hydroxyl radicals."
         }
       ],
-      "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "correctAnswerId": "c",
+      "explanation": "Peat described aspirin as lowering the GSH/GSSG ratio and increasing mitochondrial respiration, thus acting as a pro-oxidant.",
+      "furtherReading": "Search 'Ray Peat aspirin pro-oxidant yeast site:raypeat.com'"
     },
     {
       "id": "q56",
-      "question": "Sample hard question 16?",
+      "question": "Which of the following did Peat criticize for suppressing experimental embryology and holistic biology in favor of genetic determinism?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Hans Spemann"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Thomas Hunt Morgan"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Lamarck"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Alexander Gurwitsch"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat noted that Morgan and his students actively suppressed holistic biology, including the work of C.M. Child.",
+      "furtherReading": "Search 'Ray Peat Morgan suppression regeneration site:raypeat.com'"
     },
     {
       "id": "q57",
-      "question": "Sample hard question 17?",
+      "question": "Peat often contrasts 'eccentric' and 'concentric' muscular activity. What distinguishes concentric activity in his framework?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Muscle lengthening under tension, leading to catabolism."
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Muscle shortening under load, supporting anabolic regeneration."
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Isometric contraction enhancing sympathetic tone."
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Passive stretching with low energy use."
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat likens concentric contractions (like walking uphill) to constructive stress, supporting tissue regeneration.",
+      "furtherReading": "Search 'Ray Peat concentric eccentric contraction site:raypeat.com'"
     },
     {
       "id": "q58",
-      "question": "Sample hard question 18?",
+      "question": "According to Peat, what is the most universal cellular relaxation agent involved in inhibition and restoration?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Magnesium"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Carbon dioxide"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Melatonin"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Nitric oxide"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat frequently emphasizes CO\u2082 as the most universal cellular relaxant and restorative substance.",
+      "furtherReading": "Search 'Ray Peat carbon dioxide relaxation site:raypeat.com'"
     },
     {
       "id": "q59",
-      "question": "Sample hard question 19?",
+      "question": "Which nighttime chemical byproduct did Peat suggest may interfere with morphogenetic radiation due to UV absorption?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Lipofuscin"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Isoprene"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Hydrogen peroxide"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Serotonin"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat noted that isoprene, produced mainly at night, absorbs UV and may disrupt morphogenetic signaling.",
+      "furtherReading": "Search 'Ray Peat isoprene UV morphogenesis site:raypeat.com'"
     },
     {
       "id": "q60",
-      "question": "Sample hard question 20?",
+      "question": "Which ideological view did Peat link with the acceptance of random mutation as the basis of evolution?",
       "options": [
         {
           "id": "a",
-          "text": "Hard Option A"
+          "text": "Holism"
         },
         {
           "id": "b",
-          "text": "Hard Option B"
+          "text": "Malthusian catastrophism"
         },
         {
           "id": "c",
-          "text": "Hard Option C"
+          "text": "Energeticism"
         },
         {
           "id": "d",
-          "text": "Hard Option D"
+          "text": "Intelligent design"
         }
       ],
       "correctAnswerId": "b",
-      "explanation": "This is a placeholder explanation for a hard level question.",
-      "furtherReading": "Search for: 'Ray Peat hard topics', 'metabolic health hard Ray Peat'"
+      "explanation": "Peat connected the acceptance of random mutation with Malthusian and Catastrophist views that framed nature as deletion-driven.",
+      "furtherReading": "Search 'Ray Peat Malthus random mutation site:raypeat.com'"
     }
   ]
 }

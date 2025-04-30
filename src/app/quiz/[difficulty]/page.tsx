@@ -124,10 +124,10 @@ export default function QuizDifficultyPage(props: unknown) {
   // Main component rendering
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
-      <h1 className="text-3xl font-bold mb-6 text-center">Ray Peat Knowledge Quiz</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Do you understand Ray Peat's work?</h1>
       <>
         <p className="text-center text-muted-foreground mb-8">
-          Difficulty: <span className="font-semibold capitalize">{pageDifficulty}</span>. Select one answer per question.
+          Difficulty: <span className="font-semibold capitalize">{pageDifficulty}</span>. 20 questions, 10 minutes.
         </p>
         {currentQuestions.length > 0 ? (
           <form onSubmit={handleSubmit} className="space-y-8">
