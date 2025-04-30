@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
 
   try {
     // 1. Get IP Address
-    const headersList = headers();
+    const headersList = await headers();
     const ip = headersList.get('x-forwarded-for') ?? headersList.get('remote-addr') ?? 'IP Not Found';
 
     // 2. Parse the incoming JSON data
@@ -60,6 +60,9 @@ export async function POST(request: NextRequest) {
       // user_answers: data.userAnswers,
       // question_ids: data.questionIds,
     };
+
+    console.log('SUPABASE_URL available:', !!process.env.SUPABASE_URL); // Check if var is loaded
+    console.log('Attempting Supabase insert with data:', JSON.stringify(dbEntry, null, 2)); // Log the exact data being sent
 
     // 5. Insert data into Supabase
     // Replace 'quiz_submissions' with your actual table name if different
