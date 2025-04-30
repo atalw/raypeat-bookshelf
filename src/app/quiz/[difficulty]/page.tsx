@@ -50,6 +50,7 @@ export default function QuizDifficultyPage(props: unknown) {
 
   const [answers, setAnswers] = useState<AnswersState>({});
   const [isValidDifficulty, setIsValidDifficulty] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); // Add submitting state
   const router = useRouter();
   const pageDifficulty = params.difficulty as Difficulty;
 
@@ -73,34 +74,69 @@ export default function QuizDifficultyPage(props: unknown) {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [questionId]: value }));
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  // --- Updated handleSubmit ---
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (currentQuestions.length === 0 || !isValidDifficulty) return;
+    if (currentQuestions.length === 0 || !isValidDifficulty || isSubmitting) return;
 
+    setIsSubmitting(true); // Prevent double submission
+
+    // --- Calculate Score ---
     let score = 0;
     const totalQuestions = currentQuestions.length;
     currentQuestions.forEach(q => {
       if (answers[q.id] && answers[q.id] === q.correctAnswerId) score++;
     });
 
-    console.log("Quiz submitted.");
-    console.log("Selected Answers:", answers);
-    console.log("Difficulty:", pageDifficulty);
-    console.log("Score:", score, "/", totalQuestions);
+    // --- Prepare Data for Logging and Results ---
+    const resultData = {
+      score,
+      totalQuestions,
+      userAnswers: answers,
+      difficulty: pageDifficulty,
+      questionIds: currentQuestions.map(q => q.id)
+    };
 
+    console.log("Quiz submitted. Preparing to log...");
+    console.log("Data:", resultData);
+
+    // --- Send Data to Logging API Route ---
     try {
-      sessionStorage.setItem('quizResults', JSON.stringify({
-        score,
-        totalQuestions,
-        userAnswers: answers,
-        difficulty: pageDifficulty,
-        questionIds: currentQuestions.map(q => q.id)
-      }));
+      const response = await fetch('/api/log-quiz', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(resultData), // Send the same data structure
+      });
+
+      if (!response.ok) {
+        // Log error but continue to results page for the user
+        console.error(`API log request failed with status: ${response.status}`);
+        const errorData = await response.json().catch(() => ({})); // Try to get error details
+        console.error('API log error details:', errorData);
+      } else {
+        console.log('API log request successful.');
+      }
+    } catch (error) {
+      // Network errors or other issues with fetch
+      console.error('Error sending log data to API:', error);
+      // Continue to results page even if logging fails
+    }
+    // --- End Logging ---
+
+
+    // --- Save to Session Storage and Navigate ---
+    try {
+      sessionStorage.setItem('quizResults', JSON.stringify(resultData));
       router.push('/quiz/results');
+      // No need to setIsSubmitting(false) here as we are navigating away
     } catch (error) {
       console.error("Failed to save results to sessionStorage:", error);
-      alert("Could not save results. Please try again.");
+      alert("Could not save quiz results locally. Please try again.");
+      setIsSubmitting(false); // Allow retry if session storage fails
     }
+    // --- End Session Storage and Navigation ---
   };
   // --- End Event Handlers ---
 
